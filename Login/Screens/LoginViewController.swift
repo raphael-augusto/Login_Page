@@ -89,15 +89,17 @@ class LoginViewController: UIViewController {
         view.addSubview(emailTextField)
         view.addSubview(passwordTextField)
         
-        emailTextField.textContentType       = .emailAddress
-        emailTextField.returnKeyType         = .next
-        emailTextField.delegate              = self
+        emailTextField.textContentType              = .emailAddress
+        emailTextField.returnKeyType                = .next
+        emailTextField.autocapitalizationType       = .none
+        emailTextField.delegate                     = self
 
         
-        passwordTextField.textContentType    = .password
-        passwordTextField.returnKeyType      = .done
-        passwordTextField.isSecureTextEntry  = true
-        passwordTextField.delegate           = self
+        passwordTextField.textContentType           = .password
+        passwordTextField.returnKeyType             = .done
+        passwordTextField.autocapitalizationType    = .none
+        passwordTextField.isSecureTextEntry         = true
+        passwordTextField.delegate                  = self
         
         let padding:CGFloat = 24
         let height:CGFloat  = 60
